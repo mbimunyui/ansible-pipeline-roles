@@ -5,14 +5,6 @@ pipeline {
             
             steps {
                 script{
-                     
-                 
-                   
-                  
-                  
-                   
-                         
- 
                   // Copy file to remote server 
                   sshPublisher(publishers: [sshPublisherDesc(configName: 'ansible',
                     transfers: [ sshTransfer(flatten: false,
@@ -20,8 +12,6 @@ pipeline {
                                              sourceFiles: '*.md *.yml *.cfg roles/**'
                     )])
                   ])
-                   
-                  
                      
                 }
             }
