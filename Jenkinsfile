@@ -17,7 +17,7 @@ pipeline {
                   sshPublisher(publishers: [sshPublisherDesc(configName: 'ansible',
                     transfers: [ sshTransfer(flatten: false,
                                  remoteDirectory: '',
-                                             sourceFiles: '*.md roles/**'
+                                             sourceFiles: '*.md *.yml *.cfg roles/**'
                     )])
                   ])
                    
