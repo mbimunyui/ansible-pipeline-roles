@@ -1,0 +1,10 @@
+[webserver]
+192.168.56.70
+
+[dbserver]
+192.168.56.75
+192.168.56.85
+
+[utc_app:children]
+dbserver
+webserver
